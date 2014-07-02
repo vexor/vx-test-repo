@@ -1,0 +1,2 @@
+class VxTestRepo
+end
