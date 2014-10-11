@@ -1,0 +1,16 @@
+setup: &setup
+  adapter: postgresql
+  host: localhost
+  username: postgres
+  encoding: unicode
+  min_messages: WARNING
+  template: template0
+
+development:
+  database: demo_dev
+  <<: *setup
+
+test:
+  database: demo_test
+  <<: *setup
+
